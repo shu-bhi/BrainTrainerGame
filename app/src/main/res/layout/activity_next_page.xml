@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".nextPage">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="392dp"
+        android:layout_height="407dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="182dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="28dp"
+        android:orientation="vertical"
+        android:weightSum="2"
+        app:layout_constraintBottom_toTopOf="@+id/textViewResult"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="104dp"
+                android:layout_height="197dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#91F3DA"
+                android:fontFamily="serif"
+
+                android:onClick="chooseAnswer"
+                android:tag="0"
+                android:text="141"
+                android:textColor="#100C0C"
+                android:textSize="74dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="104dp"
+                android:layout_height="197dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#A589F3"
+                android:fontFamily="serif"
+
+                android:onClick="chooseAnswer"
+                android:text="14"
+                android:textColor="#040303"
+                android:textSize="74dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:tag="2">
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="104dp"
+                android:layout_height="197dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FA71A0"
+                android:fontFamily="serif"
+
+                android:onClick="chooseAnswer"
+                android:tag="2"
+                android:text="14"
+                android:textColor="#100E0E"
+                android:textSize="74dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="104dp"
+                android:layout_height="197dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#E9F195"
+                android:fontFamily="serif"
+
+                android:onClick="chooseAnswer"
+                android:tag="3"
+                android:text="14"
+                android:textColor="#040303"
+                android:textSize="74dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="186dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginEnd="129dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTimer"
+        android:layout_width="78dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="20dp"
+        android:backgroundTint="#F3C9BC"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:text="00:30"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.892" />
+
+    <TextView
+        android:id="@+id/textViewscore"
+        android:layout_width="78dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#B35858"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="0/0"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.866" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="357dp"
+        android:layout_height="75dp"
+        android:text="Brain Trainer Game"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.215" />
+
+    <TextView
+        android:id="@+id/quesTv"
+        android:layout_width="169dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#8F0E0E"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewscore"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toEndOf="@+id/textViewTimer"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonplayAgain"
+        android:layout_width="127dp"
+        android:layout_height="46dp"
+        android:backgroundTint="#EC1515"
+        android:gravity="center"
+        android:text="Restart"
+        android:onClick="playAgain"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.897" />
+</androidx.constraintlayout.widget.ConstraintLayout>
